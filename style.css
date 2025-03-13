@@ -1,0 +1,126 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #7f5fc5, #5e72e4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.consulta {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.consulta h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+}
+
+label {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #5e72e4;
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #5e72e4;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a61cc;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#resultado {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+#resultado p {
+    margin: 10px 0;
+}
+
+#resultado p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+#resultado p {
+    color: #666;
+}
+
+#resultado .error {
+    color: #f44336;
+    font-weight: 600;
+}
+
+#resultado .success {
+    color: #4caf50;
+    font-weight: 600;
+}
+
+/* Animação suave para o formulário */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
